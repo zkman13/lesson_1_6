@@ -44,44 +44,34 @@ public class VariablesTheme {
         System.out.println("\n4. Вывод min и max значений целых числовых типов\n");
 
         byte byteValue = Byte.MAX_VALUE;
-
         System.out.println("byte:");
         System.out.println("Первоначальное значение: " + byteValue);
-        byteValue++;
-        System.out.println("После инкремента: " + byteValue);
-        byteValue--;
-        byteValue--;
-        System.out.println("После декремента: " + byteValue + "\n");
+        System.out.println("После инкремента: " + (++byteValue));
+        System.out.println("После декремента: " + (--byteValue) + "\n");
 
         short shortValue = Short.MAX_VALUE;
-
         System.out.println("short:");
         System.out.println("Первоначальное значение: " + shortValue);
-        shortValue++;
-        System.out.println("После инкремента: " + shortValue);
-        shortValue--;
-        shortValue--;
-        System.out.println("После декремента: " + shortValue + "\n");
+        System.out.println("После инкремента: " + (++shortValue));
+        System.out.println("После декремента: " + (--shortValue) + "\n");
 
         int intValue = Integer.MAX_VALUE;
-
         System.out.println("int:");
         System.out.println("Первоначальное значение: " + intValue);
-        intValue++;
-        System.out.println("После инкремента: " + intValue);
-        intValue--;
-        intValue--;
-        System.out.println("После декремента: " + intValue + "\n");
+        System.out.println("После инкремента: " + (++intValue));
+        System.out.println("После декремента: " + (--intValue) + "\n");
 
         long longValue = Long.MAX_VALUE;
-
         System.out.println("long:");
         System.out.println("Первоначальное значение: " + longValue);
-        longValue++;
-        System.out.println("После инкремента: " + longValue);
-        longValue--;
-        longValue--;
-        System.out.println("После декремента: " + longValue);
+        System.out.println("После инкремента: " + (++longValue));
+        System.out.println("После декремента: " + (--longValue) + "\n");
+
+        char charValue = Character.MAX_VALUE;
+        System.out.println("char:");
+        System.out.println("Первоначальное значение: " + (int) charValue);
+        System.out.println("После инкремента: " + (int) (++charValue));
+        System.out.println("После декремента: " + (int) (--charValue));
 
         System.out.println("\n5. Перестановка значений переменных\n");
 
@@ -97,16 +87,16 @@ public class VariablesTheme {
         System.out.println("Способ 1: с помощью третьей переменной" +
                 "\nНовые значения переменных:\na: " + a + ", b: " + b + "\n");
 
-        a = a + b;
+        a += b;
         b = a - b;
-        a = a - b;
+        a -= b;
 
         System.out.println("Способ 2: с помощью арифметических операций" +
                 "\nНовые значения переменных:\na: " + a + ", b: " + b + "\n");
 
-        a = a ^ b;
+        a ^= b;
         b = a ^ b;
-        a = a ^ b;
+        a ^= b;
 
         System.out.println("Способ 3: с помощью побитовой операции " +
                 "^\nНовые значения переменных:\na: " + a + ", b: " + b);
