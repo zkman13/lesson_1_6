@@ -3,48 +3,51 @@ public class IfElseStatementTheme {
         System.out.println("\n1. Перевод псевдокода на язык Java\n");
 
         boolean isMale = true;
-        int age = 20;
-        double height = 1.75;
 
         if (!isMale) {
-            System.out.println("Gender: Female");
+            System.out.println("Пол: Женский");
         } else {
-            System.out.println("Gender: Male");
+            System.out.println("Пол: Мужской");
         }
+
+        int age = 20;
 
         if (age > 18) {
-            System.out.println("Adult");
+            System.out.println("Взрослый");
         } else {
-            System.out.println("Minor");
+            System.out.println("Несовершеннолетний");
         }
+
+        double height = 1.75;
 
         if (height < 1.8) {
-            System.out.println("Height is less than 1.8 meters");
+            System.out.println("Рост меньше чем 1.8 метра");
         } else {
-            System.out.println("Height is 1.8 meters or more");
+            System.out.println("Рост 1.8 метра или больше");
         }
 
-        String name = "Ivan";
+        String name = "Иван";
         char firstNameLetter = name.charAt(0);
-        if (firstNameLetter == 'M') {
-            System.out.println("The name starts with M");
-        } else if (firstNameLetter == 'I') {
-            System.out.println("The name starts with I");
+
+        if (firstNameLetter == 'М') {
+            System.out.println("Имя начинается на М");
+        } else if (firstNameLetter == 'И') {
+            System.out.println("Имя начинается на И");
         } else {
-            System.out.println("The name starts with a different letter");
+            System.out.println("Имя не начинается на М или И");
         }
 
         System.out.println("\n2. Поиск большего числа\n");
 
-        int num1 = 123;
-        int num2 = 223;
+        int number1 = 123;
+        int number2 = 223;
 
-        if (num1 > num2) {
-            System.out.println(num1 + " is greater than " + num2);
-        } else if (num2 > num1) {
-            System.out.println(num2 + " is greater than " + num1);
+        if (number1 > number2) {
+            System.out.println(number1 + " больше чем " + number2);
+        } else if (number2 > number1) {
+            System.out.println(number2 + " больше чем " + number1);
         } else {
-            System.out.println(num1 + " and " + num2 + " are equal");
+            System.out.println(number1 + " и " + number2 + " равны");
         }
 
         System.out.println("\n3. Проверка числа\n");
@@ -53,7 +56,6 @@ public class IfElseStatementTheme {
 
         if (number == 0) {
             System.out.println("Число равно нулю.");
-            // Переход сразу к задаче 4
         } else {
             if (number > 0) {
                 System.out.print(number + " является положительным");
@@ -70,76 +72,60 @@ public class IfElseStatementTheme {
 
         System.out.println("\n4. Поиск одинаковых цифр в числах\n");
 
-        int firstDigit1 = num1 / 100;
-        int secondDigit1 = (num1 / 10) % 10;
-        int thirdDigit1 = num1 % 10;
+        int hundreds1 = number1 / 100;
+        int tens1 = (number1 / 10) % 10;
+        int ones1 = number1 % 10;
+        int hundreds2 = number2 / 100;
+        int tens2 = (number2 / 10) % 10;
+        int ones2 = number2 % 10;
 
-        int firstDigit2 = num2 / 100;
-        int secondDigit2 = (num2 / 10) % 10;
-        int thirdDigit2 = num2 % 10;
-
-        boolean hasEqualDigits = false;
-
-        if (firstDigit1 == firstDigit2 && secondDigit1 == secondDigit2 && thirdDigit1 == thirdDigit2) {
-            System.out.println("Все цифры в числах " + num1 + " и " + num2 + " одинаковы.");
+        if (hundreds1 == hundreds2 && tens1 == tens2 && ones1 == ones2) {
+            System.out.println("Все цифры в числах " + number1 + " и " + number2 + " одинаковы.");
         } else {
-            if (firstDigit1 != firstDigit2 && secondDigit1 != secondDigit2 && thirdDigit1 != thirdDigit2) {
-                System.out.println("Равных цифр в разрядах чисел " + num1 + " и " + num2 + " нет.");
+            if (hundreds1 != hundreds2 && tens1 != tens2 && ones1 != ones2) {
+                System.out.println("Одинаковых цифр в разрядах чисел " + number1 + " и " + number2 + " нет.");
             } else {
-                System.out.println("Числа: " + num1 + " и " + num2);
+                System.out.println("Числа: " + number1 + " и " + number2);
 
-                if (firstDigit1 == firstDigit2) {
-                    hasEqualDigits = true;
-                    System.out.println("Цифры " + firstDigit1 + " в первом разряде одинаковы.");
+                if (hundreds1 == hundreds2) {
+                    System.out.println("Цифры " + hundreds1 + " в первом разряде одинаковы.");
                 }
 
-                if (secondDigit1 == secondDigit2) {
-                    hasEqualDigits = true;
-                    System.out.println("Цифры " + secondDigit1 + " во втором разряде одинаковы.");
+                if (tens1 == tens2) {
+                    System.out.println("Цифры " + tens1 + " во втором разряде одинаковы.");
                 }
 
-                if (thirdDigit1 == thirdDigit2) {
-                    hasEqualDigits = true;
-                    System.out.println("Цифры " + thirdDigit1 + " в третьем разряде одинаковы.");
-                }
-
-                if (!hasEqualDigits) {
-                    System.out.println("Равных цифр в разрядах чисел " + num1 + " и " + num2 + " нет.");
+                if (ones1 == ones2) {
+                    System.out.println("Цифры " + ones1 + " в третьем разряде одинаковы.");
                 }
             }
         }
 
         System.out.println("\n5. Определение символа по его коду\n");
 
-        char character = '\u0057';
+        char unknownChar = '\u0057';
 
-        if (Character.isLetter(character)) {
-            if (Character.isUpperCase(character)) {
-                System.out.println("'" + character + "' - большая буква");
-            } else {
-                System.out.println("'" + character + "' - маленькая буква");
-            }
-        } else if (Character.isDigit(character)) {
-            System.out.println("'" + character + "' - цифра");
+        if (Character.isLetter(unknownChar)) {
+            System.out.println(unknownChar + " " + (Character.isUpperCase(unknownChar) ?
+                    "- большая буква" : "- маленькая буква"));
+        } else if (Character.isDigit(unknownChar)) {
+            System.out.println("'" + unknownChar + "' - цифра");
         } else {
-            System.out.println("'" + character + "' - ни буква и ни цифра");
+            System.out.println("'" + unknownChar + "' - ни буква и ни цифра");
         }
 
         System.out.println("\n6. Подсчет начисленных банком %\n");
 
         double deposit = 321123.59;
-        double interestRate;
-        double interest;
+        double interestRate = 0.10;
 
         if (deposit < 100000) {
             interestRate = 0.05;
         } else if (deposit <= 300000) {
             interestRate = 0.07;
-        } else {
-            interestRate = 0.10;
         }
 
-        interest = deposit * interestRate;
+        double interest = deposit * interestRate;
         double totalAmount = deposit + interest;
 
         System.out.println("Сумма вклада: " + deposit + " руб.");
@@ -149,10 +135,7 @@ public class IfElseStatementTheme {
         System.out.println("\n7. Определение оценки по предметам\n");
 
         double historyPercentage = 59.0;
-        double programmingPercentage = 92.0;
-
-        int historyGrade;
-        int programmingGrade;
+        int historyGrade = 5;
 
         if (historyPercentage <= 60) {
             historyGrade = 2;
@@ -160,9 +143,10 @@ public class IfElseStatementTheme {
             historyGrade = 3;
         } else if (historyPercentage <= 91) {
             historyGrade = 4;
-        } else {
-            historyGrade = 5;
         }
+
+        double programmingPercentage = 92.0;
+        int programmingGrade = 5;
 
         if (programmingPercentage <= 60) {
             programmingGrade = 2;
@@ -170,8 +154,6 @@ public class IfElseStatementTheme {
             programmingGrade = 3;
         } else if (programmingPercentage <= 91) {
             programmingGrade = 4;
-        } else {
-            programmingGrade = 5;
         }
 
         double averageGrade = (historyGrade + programmingGrade) / 2.0;
@@ -187,9 +169,7 @@ public class IfElseStatementTheme {
         double monthlySales = 13025.233;
         double monthlyRent = 5123.018;
         double monthlyCost = 9001.729;
-        double monthlyProfit = monthlySales - (monthlyRent + monthlyCost);
-        double annualProfit = monthlyProfit * 12;
-
+        double annualProfit = (monthlySales - (monthlyRent + monthlyCost)) * 12;
         String sign = "";
 
         if (annualProfit > 0) {
