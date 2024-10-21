@@ -83,12 +83,12 @@ public class VariableNamesTheme {
         System.out.println("Дата начала = " + startDate);
 
         // Окончание диапазона
-        int rangeEnd = 100;
-        System.out.println("Окончание диапазона = " + rangeEnd);
+        int endRange = 100;
+        System.out.println("Окончание диапазона = " + endRange);
 
         // Полное имя работника месяца
-        String employeeOfTheMonth = "Иван Иванов";
-        System.out.println("Полное имя работника месяца = " + employeeOfTheMonth);
+        String employeeOfMonth = "Иван Иванов";
+        System.out.println("Полное имя работника месяца = " + employeeOfMonth);
 
         // Заголовок электронной книги
         String ebookTitle = "Война и мир";
@@ -117,8 +117,8 @@ public class VariableNamesTheme {
         System.out.println("\n2. Boolean-переменные:");
 
         // Сотни равны?
-        boolean isHundredsEqual = true;
-        System.out.println("Сотни равны? = " + isHundredsEqual);
+        boolean isEqualHundreds = true;
+        System.out.println("Сотни равны? = " + isEqualHundreds);
 
         // Компьютер включен?
         boolean isComputerOn = false;
@@ -145,8 +145,8 @@ public class VariableNamesTheme {
         System.out.println("Новое? = " + isNew);
 
         // Электронная почта действительная?
-        boolean isEmailValid = true;
-        System.out.println("Электронная почта действительная? = " + isEmailValid);
+        boolean isValidEmail = true;
+        System.out.println("Электронная почта действительная? = " + isValidEmail);
 
         // Имеются уникальные строки?
         boolean hasUniqueStrings = true;
@@ -155,8 +155,8 @@ public class VariableNamesTheme {
         System.out.println("\n3. Аббревиатуры:");
 
         // Старый universally unique identifier
-        String oldUUID = "123e4567-e89b-12d3-a456-426614174000";
-        System.out.println("Старый universally unique identifier = " + oldUUID);
+        String oldUuid = "123e4567-e89b-12d3-a456-426614174000";
+        System.out.println("Старый universally unique identifier = " + oldUuid);
 
         // Производитель оперативной памяти
         String ramManufacturer = "Kingston";
@@ -171,12 +171,12 @@ public class VariableNamesTheme {
         System.out.println("Протокол передачи гипертекста = " + httpProtocol);
 
         // Сокращенный uniform resource locator
-        String shortURL = "https://example.com/test";
-        System.out.println("Сокращенный uniform resource locator = " + shortURL);
+        String shortUrl = "https://example.com/test";
+        System.out.println("Сокращенный uniform resource locator = " + shortUrl);
 
         // Новый идентификатор клиента
-        String newClientID = "CLIENT123456";
-        System.out.println("Новый идентификатор клиента = " + newClientID);
+        String newCid = "CLIENT123456";
+        System.out.println("Новый идентификатор клиента = " + newCid);
 
         // American standard code for information interchange
         String asciiCode = "ASCII";
