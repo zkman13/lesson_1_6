@@ -187,17 +187,15 @@ public class IfElseStatementTheme {
         double monthlySales = 13025.233;
         double monthlyRent = 5123.018;
         double monthlyCost = 9001.729;
-
         double monthlyProfit = monthlySales - (monthlyRent + monthlyCost);
         double annualProfit = monthlyProfit * 12;
 
-        String formattedProfit = String.format("%f", annualProfit);
         String sign = "";
 
         if (annualProfit > 0) {
             sign = "+";
         }
 
-        System.out.println("Прибыль за год: " + sign + formattedProfit + " руб.");
+        System.out.println("Прибыль за год: " + sign + annualProfit + " руб.");
     }
 }
